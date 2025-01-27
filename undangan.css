@@ -1,0 +1,136 @@
+/* styles.css */
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}
+
+@keyframes zoomIn {
+  0% { transform: scale(0.8); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+@keyframes fadeInUp {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #f0c27b, #4b1248);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #e506b5;
+  overflow: hidden;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.invitation-card {
+  background-color: rgba(15, 41, 15, 0.9);
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0px 10px 20px rgba(231, 93, 182, 0.2);
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.header .title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #e63946;
+  margin-bottom: 10px;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.header .subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.couple {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.names h3 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #180210;
+  margin: 0 10px;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.heart {
+  font-size: 3rem;
+  color: #ff416c;
+  animation: bounce 1.5s infinite;
+}
+
+.event-details p {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.countdown {
+  margin: 30px 0;
+}
+
+#timer {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #e9c46a;
+}
+
+button {
+  background-color: #ff416c;
+  color: white;
+  padding: 12px 25px;
+  font-size: 1.3rem;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  animation: zoomIn 1s ease-in-out;
+}
+
+button:hover {
+  background-color: #e3003b;
+}
+
+button:focus {
+  outline: none;
+}
+
+p {
+  font-size: 1.1rem;
+  color: #01030c;
+}
+
+.rsvp-btn {
+  margin-top: 20px;
+}
+
+#rsvp-message {
+  font-size: 1.2rem;
+  color: #f80ad0;
+}

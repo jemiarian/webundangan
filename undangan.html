@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Undangan Pernikahan</title>
+  <link rel="stylesheet" href="undangan.css">
+</head>
+<body>
+  <div class="wrapper">
+    <div class="invitation-card">
+      <div class="header">
+        <h1 class="title">Dengan Hormat</h1>
+        <h2 class="subtitle">Kami Mengundang Anda</h2>
+      </div>
+
+      <div class="couple">
+        <div class="names">
+          <h3 class="animated fadeIn">RINDI ANGGRAEINI</h3>
+          <p>Dengan</p>
+          <h3 class="animated fadeIn">JEMI ARIAN</h3>
+        </div>
+        <div class="heart animated bounce">&#10084;</div>
+      </div>
+
+      <div class="event-details">
+        <p><strong>Tanggal:</strong> 17 Agustus 2030</p>
+        <p><strong>Waktu:</strong> 10:00 WIB</p>
+        <p><strong>Lokasi:</strong> Hotel Ayana, Jl. Raya No. 123, Kota BALI</p>
+      </div>
+
+      <div class="countdown">
+        <h3>Countdown Menuju Acara</h3>
+        <div id="timer">
+          <span id="days">00</span> hari 
+          <span id="hours">00</span> jam 
+          <span id="minutes">00</span> menit 
+          <span id="seconds">00</span> detik
+        </div>
+      </div>
+
+      <div class="button-container">
+        <button onclick="showMessage()" class="rsvp-btn animated zoomIn">Konfirmasi Kehadiran</button>
+      </div>
+      <p id="rsvp-message" style="display:none;" class="animated fadeInUp">Terima kasih atas konfirmasi Anda. Kami menunggu kedatangan Anda!</p>
+    </div>
+  </div>
+
+  <script src="undangan.js"></script>
+</body>
+</html>
